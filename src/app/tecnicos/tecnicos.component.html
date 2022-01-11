@@ -1,0 +1,30 @@
+<div id="formulario" class ="container col-md-6">
+    <div class ="card">
+      <div class="card-header">
+         <h3> Agregar Tecnico </h3>
+      </div>
+      <div class ="card-body">
+        <form action="">
+          <div class="form-group">
+            <label for="">Id del tecnico: </label>
+            <input type="text" class="form-control" [(ngModel)]="tecnicos.idTecnico" name="IdTecnico">
+          </div>
+          <div class="form-group">
+            <label for="">Id del servicio: </label>
+            <input type="text" class="form-control" [(ngModel)]="tecnicos.idServicio" name="idServicio">
+          </div>
+          <div class="form-group">
+            <label for="">Fecha de inicio: </label>
+            <input type="datetime-local" class="form-control" [(ngModel)]="tecnicos.fechaInicio" name="fechaInicio">
+          </div>
+          <div class="form-group">
+            <label for="">Fecha de finalización: </label>
+            <input type="datetime-local" class="form-control" [(ngModel)]="tecnicos.fechaFinal" name="fechaFinal">
+          </div>
+          <button (click)="GuardarCuenta()" class="btn btn-danger"> Guardar </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  

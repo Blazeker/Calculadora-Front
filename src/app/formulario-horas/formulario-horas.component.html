@@ -1,0 +1,60 @@
+<div id="formulario2" class ="container col-md-6">
+    <div class ="card">
+      <div class="card-header">
+         <h3> Agregar Tecnico </h3>
+      </div>
+      <div class ="card-body">
+        <form action="">
+          <div class="form-group">
+            <label for="">Id del tecnico: </label>
+            <input type="text" class="form-control" [(ngModel)]="formulario.idTecnico" name="idTecnico" >
+          </div>
+          <div class="form-group">
+            <label for="">Semana a consultar: </label>
+            <input type="text" class="form-control" [(ngModel)]="formulario.semana" name="semana">
+          </div>
+          <button (click)="consultarTecnico()" class="btn btn-danger"> Consultar </button>
+        </form>
+      </div>
+    </div>
+    
+
+  
+  </div>
+
+  <div id="container2">
+    <div class ="card">
+      <div class="card-header">
+        <h3> Datos del tecnico </h3>
+      </div>
+      <div class ="card-body">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th> Id tecnico </th>
+              <th> Semana </th>
+              <th> Horas normales </th>
+              <th> Horas nocturnas </th>
+              <th> Horas dominicales </th>
+              <th> Horas normales extras </th>
+              <th> Horas nocturnas extras </th>
+              <th> Horas dominicales extras </th>
+              <th> Horas totales </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-center">
+              <td>{{ hora.idTecnico }}</td>
+              <td>{{ this.formulario.semana }}</td>
+              <td>{{ hora.horasNormales }}</td>
+              <td>{{ hora.horasNocturnas }}</td>
+              <td>{{ hora.horasDominicales }}</td>
+              <td>{{ hora.horasNormalesExtra }}</td>
+              <td>{{ hora.horasNocturnasExtra }}</td>
+              <td>{{ hora.horasDominicalesExtra }}</td>
+              <td>{{ hora.horasTotales }}</td>
+        </tbody>       
+        </table> 
+      </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+h1
+{
+  bottom: 500px;
+}
+
+
+#crearUsuario
+{
+  position: relative;
+  left: 800px;
+  top: 95px;
+}
+
+#crearCuenta
+{
+  position: relative;
+  left: 175px;
+  bottom: 300px;
+}
+
